@@ -1,0 +1,316 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+
+/* pagina index css */
+
+/* #h2Index:hover{
+  text-transform: uppercase;
+  font-size:20px;
+  box-shadow: inset 2px 50px 50px 2px #dfeaa9;
+
+} */
+#h2Index{
+  color: rgb(130, 190, 125);
+  animation: zoom 10s infinite;
+}
+  /* nav entera */
+  #minav{
+    background-color:orange;
+    padding-bottom:20px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: white;
+
+  }
+
+ /* enlaces nav */
+  #minav a:hover{
+    background-color: rgb(3, 58, 11);
+    border-radius: 10PX;
+  }
+  #minav a{
+    color: white;
+    border-radius: 10px;
+  }
+
+  /* imagen responsiva */
+  #imgPortada{
+  width: 100%;
+  height:auto;
+  padding: 30px;
+  }
+  #imgPortada:hover{
+    animation-duration: 30ms; 
+  }
+  #h1fecha:hover{
+    box-shadow: inset 0 60px 0 0 hsl(70, 61%, 79%);
+    color: rgb(38, 126, 28);
+    transition: 3s;
+    border-radius: 100px;
+  }
+  #h1fecha{
+    margin-top: 20px;
+    align-items: center;
+    color: white;
+    animation: move 10s infinite;
+  }
+  @keyframes move {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2) rotateZ(360deg);
+    }
+  
+    100% {
+        transform: scale(1);
+    }
+  }
+
+ 
+   /* css pagina que es  */
+   #pijama-section {
+    padding: 20px 0;
+  }
+
+  #pijama-content {
+    background-color: rgba(26, 65, 48, 0.5);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  #pijama-content:hover {
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 20px;
+
+
+  }
+
+  #pijama-content a {
+    color: green;
+    font-weight: 800;
+  }
+
+  #h2quees{
+    font-size:50px;
+    color: rgb(168, 238, 161);
+   
+  }
+  #h2quees:hover {
+    text-transform: uppercase;
+    font-size:50px;
+    color: rgb(38, 126, 28);
+    box-shadow: inset 2px 50px 50px 2px #dfeaa9;
+
+  }
+  #aside{
+  background-color: rgba(26, 65, 48, 0.5);
+  padding-bottom:20px;
+  justify-content: center;
+}
+#h1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  box-shadow: inset 2px 50px 50px 2px #dfeaa9;
+  font-size:50px;
+  color: rgb(38, 126, 28);
+}
+/* *****COMO PARTICIPAR******/
+form {
+  background-color: rgb(206, 216, 206);
+  padding-top: 2em;
+  border-radius:12px;
+
+}
+
+
+
+
+#btn {
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  animation: zoom 3s infinite;
+}
+/* Animación del boton enviar */
+@keyframes zoom {
+  0% {
+      transform: scale(1);
+  }
+
+  100% {
+      transform: scale(1.2);
+  }
+}
+#btn:hover{
+  animation: zoom 4s initial;
+  background-color: orange;
+}
+label{
+  font-weight: 700;
+}
+#H1PARTICIPAR{
+  border-radius: 12px;
+}
+
+
+
+/* css acogida.html */
+/*****CARDS*****/
+#h1A{
+  margin-top: 30px;
+border-radius: 20px;  
+padding:25px;
+font-size:4em;
+color: rgb(38, 126, 28);
+animation:cambio 8s infinite ;
+background-color: hsl(37, 65%, 50%, 0.5);
+
+
+}
+@keyframes cambio {
+  0%, 100% {
+    box-shadow: inset 20px 0px 0px 20px #8fbf8f;
+    font-size:50px;
+    color: rgb(38, 126, 28);
+    border-radius: 20px;
+    }
+    50% {
+      box-shadow: inset -20px 0px 0px 20px rgb(27, 123, 16);
+      border-radius: 40px;
+}
+}
+
+.profile-card-5{
+  margin-top:20px;
+ 
+}
+.profile-card-5 .btn{
+  border-radius:20px;
+  text-transform:uppercase;
+  font-size:12px;
+  padding:7px 20px;
+}
+.profile-card-5 .card-img-flex {
+  width: 91%;
+  margin: 1em;
+  position: relative;
+ 
+  
+}
+.profile-card-5 img{
+  border-radius:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.63);
+}
+.profile-card-5 h5{
+  color: #34490e;
+  font-size:2em;
+  font-weight:600;
+  border-radius: 100px;
+  background-color: orange;
+  padding: 4px;
+  text-align: center;
+}
+
+.profile-card-5 p{
+  font-size:14px;
+  font-weight:400;
+  color: white;
+  background-color: #34490e;
+  padding: 1em;
+  border-radius: 20px;
+}
+/* quienes somos */
+#h5{
+  animation: animacioh5 1s infinite;
+}
+ /* Animaciçon iconos footer */
+ @keyframes animacionh5 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+/* donde encontrarnos */
+#H1donde{
+  background-color:rgb(38, 126, 28);
+  color:white;
+ animation: animacionh1 3s infinite;
+ border-radius: 15px;
+ width: auto;
+}
+@keyframes animacionh1 {
+  0% {
+    transform: translateY(-80px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+  animation: opcidad 5s infinite;
+}
+}
+#h3{
+  color:green;
+  animation: miAnimacion 4s infinite;
+}
+#donde{
+  background-color: rgb(206, 216, 206);
+}
+iframe{
+  border-radius: 30px;
+ 
+}
+/**** FOOTER ******/
+footer i{
+  color: green;
+  animation: miAnimacion 1s infinite;
+
+}
+footer i:hover{
+  color:white;
+}
+footer a{
+  color: green;
+
+}
+footer a:hover{
+  color: white;
+}
+
+footer a{
+  color: green;
+}
+   
+
+
+ /* Animacion iconos footer */
+ @keyframes miAnimacion {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
