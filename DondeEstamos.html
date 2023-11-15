@@ -13,8 +13,8 @@
 
 <body>
   <nav id="minav" class="navbar navbar-expand-lg navbar-dark text-white">
-    <a class="navbar-brand" href="#">Día del Pijama</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <a class="navbar-brand" href="./index2.html">Día del Pijama</a>
+    <button  id="botonmenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,11 +42,10 @@
       </ul>
     </div>
   </nav>
-  <header class="container" >
+  <header class="container">
     <div class="row ">
-      <div class="col-md-8 d-flex text-center">
-        <h1 id="H1donde" class=" m-5 p-3">Rellena los datos para participar</h1>
-      </div>
+      <h1 id="H1donde" class=" m-5 p-3">Puedes acudir a cualquiera de nuestros centros</h1>
+    </div>
     </div>
   </header>
   <section id="donde" class="container-fluid text-center h-100 py-4  my-0">
@@ -58,33 +57,28 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </aside>
     <aside class="row">
-    <h3 id="h3" class="col-md-12">Valencia</h3>
-    <iframe class="my-3 col-md-6 offset-md-3"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.504947422703!2d-0.3901241247466728!3d39.45791991343811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f3ba3426a91%3A0x6d7d248638c5c33e!2sC.%20de%20Roca%2C%2019%2C%2046007%20Valencia!5e0!3m2!1ses!2ses!4v1699469957994!5m2!1ses!2ses"
-      width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h3 id="h3" class="col-md-12">Valencia</h3>
+      <iframe class="my-3 col-md-6 offset-md-3"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.504947422703!2d-0.3901241247466728!3d39.45791991343811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f3ba3426a91%3A0x6d7d248638c5c33e!2sC.%20de%20Roca%2C%2019%2C%2046007%20Valencia!5e0!3m2!1ses!2ses!4v1699469957994!5m2!1ses!2ses"
+        width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </aside>
 
     <aside class="row h-30">
-    <h3  id="h3"  class="col-md-12">Alicante</h3>
-    <iframe class="my-3 col-md-6 offset-md-3"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.445593258017!2d-0.4915051248056275!3d38.33866747947927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62364add2d3da7%3A0x7055e4feb5cb5ce3!2sBusiness%20world%20Alicante!5e0!3m2!1ses!2ses!4v1699470001890!5m2!1ses!2ses"
-      width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h3 id="h3" class="col-md-12">Alicante</h3>
+      <iframe class="my-3 col-md-6 offset-md-3"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.445593258017!2d-0.4915051248056275!3d38.33866747947927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62364add2d3da7%3A0x7055e4feb5cb5ce3!2sBusiness%20world%20Alicante!5e0!3m2!1ses!2ses!4v1699470001890!5m2!1ses!2ses"
+        width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </aside>
   </section>
 
-
-
-
-
-
-
+  <!-- footer -->
   <footer class="bg-dark text-light p-2  container-fluid">
     <div class="container">
       <div class="row bg-dark">
         <div class="col-md-6">
-          <p>Contacto: <a href="mailto:correo@ejemplo.com"><i class="far fa-envelope fa-2x ml-3 p-2"></i>aseaf@aseaf.org
+          <p class="fs-5" >Contacto: <a  class="fs-4" href="mailto:correo@ejemplo.com">aseaf@aseaf.org</a><i class="far fa-envelope fa-2x  p-2"></i>
           </p>
         </div>
         <div class="col-md-6 text-right mt-3">
@@ -95,8 +89,21 @@
               class="fab fa-facebook fa-2x ml-3"></i></a>
           <a href="https://twitter.com/aseafisn"><i class="fab fa-twitter fa-2x ml-3"></i></a>
         </div>
+        <div class="col-md-3 text-right mt-3 ps-5">
+          <ul id="pagination" class="pagination pt-2 ">
+            <p class="">Paginas:</p>
+            <li><a href="index2.html">1</a></li>
+            <li><a href="queEs.html">2</a></li>
+            <li><a href="comoParticipar.html">3</a></li>
+            <li><a href="Historias.html">4</a></li>
+            <li><a href="Acogida.html">5</a></li>
+            <li><a href="quienesSomos.html">6</a></li>
+            <li><a   class="bg-dark text-success"   href="DondeEstamos.html">7</a></li>
+  
+          </ul>
+        </div>
       </div>
-    </div>
+    </div> 
   </footer>
 
   <!-- Agrega los enlaces a los archivos de Bootstrap JavaScript -->

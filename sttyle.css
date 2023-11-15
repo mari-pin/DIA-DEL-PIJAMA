@@ -2,130 +2,165 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
 
-/* pagina index css */
+/* paginacion  css */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  
+}
 
-/* #h2Index:hover{
-  text-transform: uppercase;
-  font-size:20px;
-  box-shadow: inset 2px 50px 50px 2px #dfeaa9;
+.pagination li {
+  margin: 0 5px;
+}
 
-} */
-#h2Index{
+.pagination a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #dfeaa9;
+  color: #34490e;
+  box-shadow: 2px 5px;
+}
+
+.pagination a:hover {
+  background-color: orange;
+  color: green;
+
+}
+
+#h2Index {
   color: rgb(130, 190, 125);
   animation: zoom 10s infinite;
 }
-  /* nav entera */
-  #minav{
-    background-color:orange;
-    padding-bottom:20px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    color: white;
 
-  }
+/* nav entera */
+#minav {
+  background-color: orange;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 
- /* enlaces nav */
-  #minav a:hover{
-    background-color: rgb(3, 58, 11);
-    border-radius: 10PX;
-  }
-  #minav a{
-    color: white;
-    border-radius: 10px;
-  }
+}
 
-  /* imagen responsiva */
-  #imgPortada{
+/* enlaces nav */
+#minav a:hover {
+  background-color: rgb(3, 58, 11);
+  border-radius: 10PX;
+  color: white;
+}
+
+
+#minav a {
+  color: white;
+  border-radius: 10px;
+}
+
+/* boton para el menu*/
+#botonmenu {
+  color: white;
+}
+
+
+
+/* imagen responsiva */
+#imgPortada {
   width: 100%;
-  height:auto;
+  height:75vh;
   padding: 30px;
-  }
-  #imgPortada:hover{
-    animation-duration: 30ms; 
-  }
-  #h1fecha:hover{
-    box-shadow: inset 0 60px 0 0 hsl(70, 61%, 79%);
-    color: rgb(38, 126, 28);
-    transition: 3s;
-    border-radius: 100px;
-  }
-  #h1fecha{
-    margin-top: 20px;
-    align-items: center;
-    color: white;
-    animation: move 10s infinite;
-  }
-  @keyframes move {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2) rotateZ(360deg);
-    }
-  
-    100% {
-        transform: scale(1);
-    }
+}
+
+#h1fecha:hover {
+  box-shadow: inset 0 60px 0 0 hsl(70, 61%, 79%);
+  color: rgb(38, 126, 28);
+  border-radius: 100px;
+}
+
+#h1fecha {
+  margin-top: 20px;
+  align-items: center;
+  color: white;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
   }
 
- 
-   /* css pagina que es  */
-   #pijama-section {
-    padding: 20px 0;
-  }
-
-  #pijama-content {
-    background-color: rgba(26, 65, 48, 0.5);
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
-  }
-
-  #pijama-content:hover {
-    background-color: black;
-    color: blanchedalmond;
-    font-size: 20px;
-
-
-  }
-
-  #pijama-content a {
-    color: green;
-    font-weight: 800;
-  }
-
-  #h2quees{
-    font-size:50px;
-    color: rgb(168, 238, 161);
+  50% {
+    transform: scaleY(1.5);
    
   }
-  #h2quees:hover {
-    text-transform: uppercase;
-    font-size:50px;
-    color: rgb(38, 126, 28);
-    box-shadow: inset 2px 50px 50px 2px #dfeaa9;
 
+  100% {
+    transform: scale(1);
   }
-  #aside{
+}
+
+
+/* css pagina que es  */
+#pijama-section {
+  padding: 20px 0;
+}
+
+#pijama-content {
   background-color: rgba(26, 65, 48, 0.5);
-  padding-bottom:20px;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#pijama-content:hover {
+  background-color: black;
+  color: blanchedalmond;
+  font-size: 20px;
+
+
+}
+
+#pijama-content a {
+  color: green;
+  font-weight: 800;
+}
+
+#h2quees {
+  font-size: 50px;
+  color: rgb(168, 238, 161);
+
+}
+
+#h2quees:hover {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: rgb(38, 126, 28);
+  box-shadow: inset 2px 50px 50px 2px #dfeaa9;
+
+}
+
+#aside {
+  background-color: rgba(26, 65, 48, 0.5);
+  padding-bottom: 20px;
   justify-content: center;
 }
-#h1{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+#h1 {
+  padding: 20px;
+  border-radius: 15px;
   margin-top: 0.5em;
   box-shadow: inset 2px 50px 50px 2px #dfeaa9;
-  font-size:50px;
+  font-size: 50px;
   color: rgb(38, 126, 28);
 }
+
 /* *****COMO PARTICIPAR******/
 form {
   background-color: rgb(206, 216, 206);
   padding-top: 2em;
-  border-radius:12px;
+  border-radius: 12px;
 
 }
 
@@ -138,100 +173,176 @@ form {
   font-size: 25px;
   animation: zoom 3s infinite;
 }
+
 /* Animación del boton enviar */
 @keyframes zoom {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   100% {
-      transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
-#btn:hover{
+
+#btn:hover {
   animation: zoom 4s initial;
   background-color: orange;
 }
-label{
+
+label {
   font-weight: 700;
 }
-#H1PARTICIPAR{
+
+#H1PARTICIPAR {
   border-radius: 12px;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
 
 /* css acogida.html */
 /*****CARDS*****/
-#h1A{
+#h1A {
   margin-top: 30px;
-border-radius: 20px;  
-padding:25px;
-font-size:4em;
-color: rgb(38, 126, 28);
-animation:cambio 8s infinite ;
-background-color: hsl(37, 65%, 50%, 0.5);
+  border-radius: 20px;
+  padding: 25px;
+  font-size: 4em;
+  color: rgb(38, 126, 28);
+  animation: cambio 8s infinite;
+  background-color: hsl(37, 65%, 50%, 0.5);
 
 
 }
+
 @keyframes cambio {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: inset 20px 0px 0px 20px #8fbf8f;
-    font-size:50px;
+    font-size: 50px;
     color: rgb(38, 126, 28);
     border-radius: 20px;
-    }
-    50% {
-      box-shadow: inset -20px 0px 0px 20px rgb(27, 123, 16);
-      border-radius: 40px;
-}
+  }
+
+  50% {
+    box-shadow: inset -20px 0px 0px 20px rgb(27, 123, 16);
+    border-radius: 40px;
+  }
+
 }
 
-.profile-card-5{
-  margin-top:20px;
- 
+/* animacion flechas */
+svg {
+  width: 50px;
+  background-color: coral;
+  animation: animarSVG 5s infinite;
 }
-.profile-card-5 .btn{
-  border-radius:20px;
-  text-transform:uppercase;
-  font-size:12px;
-  padding:7px 20px;
+
+@keyframes animarSVG {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px) rotateZ(90deg);
+  }
+
+  70% {
+    opacity: .6;
+    transform: translateX(0px) rotateZ(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotateZ(0deg);
+  }
 }
+
+#imgAcogida {
+  animation: mio 15s infinite;
+}
+
+@keyframes mio {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  70% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* enlaces acogida */
+#aAcogida {
+  color: green;
+  font-weight: 800;
+}
+
+#aAcogida:hover {
+  color: white;
+  background-color: rgb(3, 58, 11);
+}
+
+
+.profile-card-5 {
+  margin-top: 20px;
+
+}
+
+.profile-card-5 .btn {
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px 20px;
+}
+
 .profile-card-5 .card-img-flex {
   width: 91%;
   margin: 1em;
   position: relative;
- 
-  
+
+
 }
-.profile-card-5 img{
-  border-radius:20px;
-  box-shadow:0 0 20px rgba(0,0,0,0.63);
+
+.profile-card-5 img {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.63);
 }
-.profile-card-5 h5{
+
+.profile-card-5 h5 {
   color: #34490e;
-  font-size:2em;
-  font-weight:600;
+  font-size: 2em;
+  font-weight: 600;
   border-radius: 100px;
   background-color: orange;
   padding: 4px;
   text-align: center;
 }
 
-.profile-card-5 p{
-  font-size:14px;
-  font-weight:400;
+.profile-card-5 p {
+  font-size: 14px;
+  font-weight: 400;
   color: white;
   background-color: #34490e;
   padding: 1em;
   border-radius: 20px;
 }
+
 /* quienes somos */
-#h5{
+#h5 {
   animation: animacioh5 1s infinite;
 }
- /* Animaciçon iconos footer */
- @keyframes animacionh5 {
+
+/* Animaciçon iconos footer */
+@keyframes animacionh5 {
   0% {
     transform: scale(1);
   }
@@ -244,14 +355,16 @@ background-color: hsl(37, 65%, 50%, 0.5);
     transform: scale(1);
   }
 }
+
 /* donde encontrarnos */
-#H1donde{
-  background-color:rgb(38, 126, 28);
-  color:white;
- animation: animacionh1 3s infinite;
- border-radius: 15px;
- width: auto;
+#H1donde {
+  background-color: rgb(38, 126, 28);
+  color: white;
+  animation: animacionh1 3s infinite;
+  border-radius: 15px;
+  width: auto;
 }
+
 @keyframes animacionh1 {
   0% {
     transform: translateY(-80px);
@@ -262,45 +375,46 @@ background-color: hsl(37, 65%, 50%, 0.5);
   }
 
   100% {
-  animation: opcidad 5s infinite;
+    animation: opcidad 5s infinite;
+  }
 }
-}
-#h3{
-  color:green;
+
+#h3 {
+  color: green;
   animation: miAnimacion 4s infinite;
 }
-#donde{
+
+#donde {
   background-color: rgb(206, 216, 206);
 }
-iframe{
+
+iframe {
   border-radius: 30px;
- 
+
 }
+
 /**** FOOTER ******/
-footer i{
+footer i {
   color: green;
   animation: miAnimacion 1s infinite;
 
 }
-footer i:hover{
-  color:white;
-}
-footer a{
-  color: green;
 
-}
-footer a:hover{
+footer i:hover {
   color: white;
 }
 
-footer a{
+footer a {
   color: green;
+
 }
-   
 
+footer a:hover {
+  color: white;
+}
 
- /* Animacion iconos footer */
- @keyframes miAnimacion {
+/* Animacion iconos footer */
+@keyframes miAnimacion {
   0% {
     transform: scale(1);
   }
@@ -313,4 +427,3 @@ footer a{
     transform: scale(1);
   }
 }
-

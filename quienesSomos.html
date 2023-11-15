@@ -16,7 +16,7 @@
   <!-- nav -->
   <nav id="minav" class="navbar navbar-expand-lg navbar-dark text-white">
     <a class="navbar-brand" href="./index2.html">Día del Pijama</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <button  id="botonmenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,7 +45,7 @@
     </div>
   </nav>
   <header class="container-fluid ">
-    <div class="container w-100">
+    <div class="container">
       <div class="row h-100 align-items-center text-center">
         <div class="col-12 col-md-8 mx-auto d-flex">
           <h1 id="h1" class="text-uppercase text-center">Quienes Somos</h1>
@@ -98,7 +98,15 @@
               <h5 id="h5" class="card-title">Visión</h5>
               <p class="card-text">Ser referentes del acogimiento familiar en la Comunidad Valenciana por medio de la innovación para poder disminuir la institucionalización de la infancia y de la adolescencia.</p>
               <h5 id="h5" class="card-title">Transparencia</h5>
-              <p class="card-text">En este apartado puedes consultar la información relativa a la organización y estructura, normativa de aplicación, contratos, convenios y subvenciones, así como información económica de nuestra organización, en cumplimiento de la <a href="https://www.fevecta.coop/ficheros/documentos/ley2_15_transparencia.pdf">Ley 2/2015, de 2 de abril,  de la Generalitat, de Transparencia, Buen Gobierno y Participación Ciudadana de la Comunidad Valenciana</a> y la <a href="https://www.fevecta.coop/ficheros/documentos/ley_19_13_transparencia.pdf">Ley 19/2013, de 9 de diciembre, de Transparencia, acceso a la Información Pública y Buen Gobierno.</a></p>
+              <p class="card-text">En este apartado puedes consultar la información relativa a la organización y estructura, normativa de aplicación, contratos, convenios y subvenciones, así como información económica de nuestra organización, en cumplimiento de: <br><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+              </svg><a class="text-success ps-2" href="https://www.fevecta.coop/ficheros/documentos/ley2_15_transparencia.pdf">Ley 2/2015, de 2 de abril,  de la Generalitat, de Transparencia, Buen Gobierno y Participación Ciudadana de la Comunidad Valenciana</a><br><br><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+            </svg> <a class="text-success ps-2" href="https://www.fevecta.coop/ficheros/documentos/ley_19_13_transparencia.pdf">Ley 19/2013, de 9 de diciembre, de Transparencia, acceso a la Información Pública y Buen Gobierno.</a></p>
             </div>
           </div>
         </aside> 
@@ -107,10 +115,10 @@
    <!-- footer -->
    <footer class="bg-dark text-light p-2  container-fluid">
     <div class="container">
-      <div class="row bg-dark">
+      <div class="row  d-flex-row">
         <div class="col-md-6">
-          <p>Contacto: <a href="mailto:correo@ejemplo.com"><i
-                class="far fa-envelope fa-2x ml-3 p-2"></i>aseaf@aseaf.org</p>
+          <p>Contacto: <a href="mailto:correo@ejemplo.com">aseaf@aseaf.org</a><i class="far fa-envelope fa-2x  p-2"></i>
+          </p>
         </div>
         <div class="col-md-6 text-right mt-3">
           <a href="https://www.instagram.com/aseaf_isn/"><i class="fab fa-instagram fa-2x ml-3"></i></a>
@@ -120,6 +128,19 @@
               class="fab fa-facebook fa-2x ml-3"></i></a>
           <a href="https://twitter.com/aseafisn"><i class="fab fa-twitter fa-2x ml-3"></i></a>
         </div>
+        <div class="col-md-6 mt-3 ps-5">
+          <ul id="pagination" class="pagination pt-2 ">
+            <p class="">Paginas:</p>
+            <li><a href="index2.html">1</a></li>
+            <li><a href="queEs.html">2</a></li>
+            <li><a href="comoParticipar.html">3</a></li>
+            <li><a href="Historias.html">4</a></li>
+            <li><a href="Acogida.html">5</a></li>
+            <li><a   class="bg-dark text-success"  href="quienesSomos.html">6</a></li>
+            <li><a href="DondeEstamos.html">7</a></li>
+  
+          </ul>
+          </div>
       </div>
     </div>
   </footer>
